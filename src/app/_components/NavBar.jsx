@@ -16,7 +16,6 @@ export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
-    // noinspection JSValidateTypes
     return (
         <Navbar isMenuOpen={isMenuOpen}
                 onMenuOpenChange={setIsMenuOpen}
