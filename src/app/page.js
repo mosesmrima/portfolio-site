@@ -95,13 +95,13 @@ export default function Home() {
                   <CardBody>
                       <div className={"flex flex-col gap-4"}>
                           <p className={"text-lg sm:text-xl  leading-8"}>
-                              I'm a <i><b>Software Engineer</b></i> and <i><b>Cybersecurity researcher</b></i>.
+                              I&apos;m a <i><b>Software Engineer</b></i> and <i><b>Cybersecurity researcher</b></i>.
                           </p>
                           <p className={"text-lg sm:text-xl leading-8"}>
                               I focus on both frontend and backend.
                           </p>
                           <p className={"text-lg sm:text-xl leading-8"}>
-                              I'm dedicated to raising awareness about the evolving cyber threat landscape.
+                              I&apos;m dedicated to raising awareness about the evolving cyber threat landscape.
                           </p>
                       </div>
                   </CardBody>
