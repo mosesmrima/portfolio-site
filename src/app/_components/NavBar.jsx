@@ -25,22 +25,23 @@ export default function NavBar() {
         >
 
 
-            <NavbarContent className="flex gap-4 items-center" justify="end">
+            <NavbarContent className="flex gap-4 items-center" justify="start">
                 <NavbarItem isActive>
                     <Link href="/#home" aria-current="page">
                         Home
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
-                    <Link href="/#" aria-current="page">
+                    <Link href="/blog" aria-current="page">
                         Blog
                     </Link>
                 </NavbarItem>
-                {
-                    theme === "dark"? <MdOutlineLightMode size={30} onClick={() => setTheme('light')}/>:
-                        <MdOutlineDarkMode size={30} onClick={() => setTheme('dark')}/>
-                }
+
             </NavbarContent>
+            {
+                theme === "dark"? <MdOutlineLightMode size={30} onClick={() => setTheme('light')}/>:
+                  <MdOutlineDarkMode  size={30} onClick={() => setTheme('dark')}/>
+            }
 
         </Navbar>
     );
