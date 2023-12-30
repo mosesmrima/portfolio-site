@@ -1,7 +1,7 @@
 "use client"
 import {Card, CardBody, CardHeader, Button} from '@nextui-org/react';
 import Image from 'next/image';
-import {urlFor} from '@/utils/sanityUtils';
+import {formatDate, urlFor} from '@/utils/sanityUtils'
 import { useRouter} from 'next/navigation';
 
 export  default function PostOverview({post, index}) {
@@ -15,6 +15,7 @@ export  default function PostOverview({post, index}) {
 			</CardHeader>
 			<CardBody className={"flex flex-col gap-2 justify-between"}>
 				<h1 className={"font-bold text-xl sm:text-2xl"}>{post.title}</h1>
+				<small className={"text-gray-500"}>{formatDate(post._createdAt)}</small>
 				<p>{post.metaDescription.slice(0, 80)}...</p>
 				<div className={"flex justify-center"}>
 					<Button onClick={() => router.push(`/blog/${post.slug.current}`)} className={"font"}>Read</Button>
