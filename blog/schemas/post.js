@@ -50,7 +50,7 @@ export default defineType({
       type: 'blockContent',
     }),
     defineField({
-      name: "meta_description",
+      name: "metaDescription",
       title: "Meta Description",
       type: "text",
     }),
