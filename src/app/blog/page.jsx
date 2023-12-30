@@ -15,7 +15,7 @@ export default async function BlogHome() {
     let overviewEls = posts.map((el, i) => <PostOverview key={i} index={i} post={el}/>)
     
     return (
-      <div className={"w-screen min-h-screen p-4 sm:p-8 flex flex-col items-center sm:items-start sm:justify-cent sm:flex-row gap-4 sm:gap-6 flex-wrap"}>
+      <div className={"w-screen min-h-screen p-4 py-8 sm:p-8 flex flex-col items-center sm:items-start sm:justify-cent sm:flex-row gap-4 sm:gap-6 flex-wrap"}>
           {overviewEls}
       </div>
     );
