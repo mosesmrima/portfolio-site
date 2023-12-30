@@ -9,13 +9,13 @@ import {useTheme} from "next-themes";
 import { MdOutlineLightMode, MdOutlineDarkMode  } from "react-icons/md";
 import {useState} from "react";
 import {press_start_2p} from "@/app/fonts";
+import {usePathname} from 'next/navigation'
 
 export default function NavBar() {
-
     const { theme, setTheme } = useTheme();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
+    const pathName = usePathname();
+    const active = pathName.includes("blog");
     return (
         <Navbar isMenuOpen={isMenuOpen}
                 onMenuOpenChange={setIsMenuOpen}
@@ -26,12 +26,12 @@ export default function NavBar() {
 
 
             <NavbarContent className="flex gap-4 items-center" justify="start">
-                <NavbarItem isActive>
-                    <Link href="/#home" aria-current="page">
+                <NavbarItem isActive={active}>
+                    <Link href="/" aria-current="page">
                         Home
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive>
+                <NavbarItem isActive={active}>
                     <Link href="/blog" aria-current="page">
                         Blog
                     </Link>
