@@ -1,16 +1,22 @@
-import { client } from '@/utils/configSanity';
+import { clientConfig } from '@/utils/sanityUtils';
+import PostOverview from '@/app/_components/PostOverview';
 
-async function getData() {
-  const query = `*[_type == "post"]`;
-  return  await client.fetch(query);
+
+export const revalidate = 10;
+
+export const metadata = {
+  title: "Blog",
+  description: "Dive into insightful articles by Mrima"
 }
 
 export default async function BlogHome() {
-  const data = await getData();
-  console.log(data)
+  const query = `*[_type == "post"]`;
+  const posts = await clientConfig.fetch(query);
+    let overviewEls = posts.map((el, i) => <PostOverview key={i} index={i} post={el}/>)
+    
     return (
-      <div>
-          Hello
+      <div className={"w-screen min-h-screen p-4 flex flex-col items-center sm:items-start sm:justify-center sm:flex-row gap-4 sm:gap-6 flex-wrap"}>
+          {overviewEls}
       </div>
     );
 }
