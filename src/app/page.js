@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from "next/link";
 import {Card, CardBody, CardFooter, CardHeader, Chip} from "@nextui-org/react";
-import me from "/public/me.jpeg";
+import me from "/public/me.svg";
 import afro from "/public/Afro.png";
 import ken from "/public/kentronix.png";
 import mifuse from "/public/mifuse.png";
