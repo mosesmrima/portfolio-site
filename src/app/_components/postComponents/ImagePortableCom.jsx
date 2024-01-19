@@ -29,8 +29,9 @@ const ImagePortableCom = ({ value }) => {
         alt={value.alt || "Image"}
         loading="lazy"
         src={`${urlFor(value)}`}
+        height={height} // Use calculated height
         width={width} // Use calculated width
-        objectFit='contain'
+        objectFit='cover'
         layout="responsive" // Make the image responsive
         className={"bg-red-600"}
       />
