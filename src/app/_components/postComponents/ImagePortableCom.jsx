@@ -24,7 +24,7 @@ const ImagePortableCom = ({ value }) => {
   }
 
   return (
-    <div className='flex justify-center flex-col bg-yellow-500'>
+    <div className='flex justify-center flex-col bg-yellow-500 max-w-[500p] max-h-[375]'>
       <Image
         alt={value.alt || "Image"}
         loading="lazy"
