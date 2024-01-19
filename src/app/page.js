@@ -46,8 +46,8 @@ export default function Home() {
                     pin:true,
                 },
                 scale: 0.2,
-                z: -100,
-                rotateX: 90,
+                z: -50,
+                opacity: 0,
                 ease: "expo.in",
                 xPercent: (index % 2) ? 50:-50,
             });
@@ -71,7 +71,6 @@ export default function Home() {
                           className="object-cover  dark:opacity-70 opacity-100 rounded-2xl"
                           src={me}
                           width={270}
-                          placeholder={"blur"}
                       />
                   </CardBody>
                   <CardFooter className="justify-center gap-6 overflow-hidden py-1 absolute  bottom-3 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
