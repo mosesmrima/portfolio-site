@@ -24,7 +24,7 @@ const ImagePortableCom = ({ value }) => {
   }
 
   return (
-    <div className='flex justify-center flex-col'>
+    <div className='flex justify-center flex-col bg-yellow-500'>
       <Image
         alt={value.alt || "Image"}
         loading="lazy"
@@ -33,8 +33,9 @@ const ImagePortableCom = ({ value }) => {
         width={width} // Use calculated width
         objectFit='contain'
         layout="responsive" // Make the image responsive
+        className={"bg-red-600"}
       />
-      {value.alt && <i className='text-gray-600 flex justify-center text-center'>{value.alt}</i>}
+      {value.alt && <i className='bg-reen-600 text-gray-600 flex justify-center text-center'>{value.alt}</i>}
     </div>
   );
 }
