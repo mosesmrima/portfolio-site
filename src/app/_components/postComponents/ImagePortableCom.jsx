@@ -35,7 +35,7 @@ const ImagePortableCom = ({ value }) => {
         layout="responsive" // Make the image responsive
         className={"bg-red-600"}
       />
-      {value.alt && <i className='bg-reen-600 text-gray-600 flex justify-center text-center'>{value.alt}</i>}
+      {value.alt && <i className='bg-green-600 text-gray-600 flex justify-center text-center'>{value.alt}</i>}
     </div>
   );
 }
