@@ -1,7 +1,7 @@
 import {defineType, defineArrayMember} from 'sanity'
 
 /**
- * This is the schema definition for the rich text fields used for
+ * This is the schema definition for the rich text fields used
  * for this blog studio. When you import it in schemas.js it can be
  * reused in other parts of the studio with:
  *  {
@@ -38,6 +38,7 @@ export default defineType({
         decorators: [
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
+          { title: "Code", value: "code" },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -60,8 +61,32 @@ export default defineType({
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
     defineArrayMember({
-      type: 'image',
-      options: {hotspot: true},
+      type: "image",
+      options: { hotspot: true },
+      fields: [
+        {
+          name: "alt",
+          type: "string",
+          title: "Alternative Text",
+        },
+      ],
     }),
+    {
+      type: 'code',
+      options: {
+        language: 'javascript',
+        languageAlternatives: [
+          {title: 'Javascript', value: 'javascript'},
+          {title: 'HTML', value: 'html'},
+          {title: 'CSS', value: 'css'},
+          {title: 'Shell', value: 'sh'},
+          {title: 'JSX', value: 'jsx'},
+          {title: 'Python', value: 'python'},
+          {title: 'JSON', value: 'json'},
+          {title: "CPP", value: "cpp"},
+        ],
+        withFilename: false,
+      },
+    }
   ],
 })
