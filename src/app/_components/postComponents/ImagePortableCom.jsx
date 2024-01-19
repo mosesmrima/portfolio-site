@@ -24,14 +24,14 @@ const ImagePortableCom = ({ value }) => {
   }
 
   return (
-    <div className='flex justify-center flex-col bg-yellow-500 max-w-[500p] max-h-[375]'>
+    <div className='flex justify-center flex-col bg-yellow-500'>
       <Image
         alt={value.alt || "Image"}
         loading="lazy"
         src={`${urlFor(value)}`}
         height={height} // Use calculated height
         width={width} // Use calculated width
-        objectFit='fill'
+        objectFit='none'
         layout="responsive" // Make the image responsive
         className={"bg-red-600"}
       />
