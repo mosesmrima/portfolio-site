@@ -34,7 +34,7 @@ const ImagePortableCom = ({ value }) => {
         objectFit='contain'
         layout="responsive" // Make the image responsive
       />
-      {value.alt && <i className='text-gray-600 flex justify-center text-center'><small>{value.alt}</small></i>}
+      {/*{value.alt && <i className='text-gray-600 flex justify-center text-center'><small>{value.alt}</small></i>}*/}
     </div>
   );
 }
