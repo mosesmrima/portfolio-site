@@ -25,7 +25,7 @@ export default function NavBar() {
         >
 
 
-            <NavbarContent className="flex gap-4 items-center" justify="start">
+            <NavbarContent className="flex gap-6 items-center" justify="start">
                 <NavbarItem isActive={active}>
                     <Link href="/" aria-current="page">
                         Home
