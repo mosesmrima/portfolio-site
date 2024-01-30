@@ -100,15 +100,13 @@ export default function Home() {
                               I have 3+ years of fullstack software engineering experience developing innovative
                               solutions.
                               My cybersecurity background gives me a unique approach to software engineering, building
-                              solutions with security in mind frm the ground up.
+                              secure by design software.
                           </p>
                           <p className={'text-lg sm:text-xl leading-8'}>
-                              As a dedicated Cybersecurity Researcher, I am deeply involved in the ever-changing
-                              landscape of cyber threats. My focus includes monitoring, analyzing, and reporting on new
+                              As a dedicated Cybersecurity Researcher, my focus includes monitoring, analyzing, and reporting on new
                               adversary behaviors. Additionally, I have a keen interest in reverse engineering and
                               threat intelligence, which aids in understanding and mitigating sophisticated cyber
-                              attacks. This specialized knowledge is instrumental in fortifying defenses and enhancing
-                              overall security strategies.
+                              attacks.
                           </p>
                       </div>
                   </CardBody>
