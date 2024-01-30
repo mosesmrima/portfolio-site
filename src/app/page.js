@@ -93,11 +93,8 @@ export default function Home() {
                   </CardHeader>
                   <CardBody>
                       <div className={'flex flex-col gap-4'}>
-                          <p className={'text-lg sm:text-xl  leading-8'}>
-                              I&apos;m a <i><b>Software Engineer</b></i> and <i><b>Cybersecurity researcher</b></i>.
-                          </p>
                           <p className={'text-lg sm:text-xl leading-8'}>
-                              I have 3+ years of fullstack software engineering experience developing innovative
+                              I have 3+ years of software engineering experience developing innovative
                               solutions.
                               With a background in cybersecurity, I endeavor to build software that is secure by design.
                           </p>
