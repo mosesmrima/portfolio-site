@@ -92,25 +92,33 @@ export default function Home() {
                       <h4 className={`${press_start_2p.className} text-2xl`}>hey,</h4>
                   </CardHeader>
                   <CardBody>
-                      <div className={"flex flex-col gap-4"}>
-                          <p className={"text-lg sm:text-xl  leading-8"}>
+                      <div className={'flex flex-col gap-4'}>
+                          <p className={'text-lg sm:text-xl  leading-8'}>
                               I&apos;m a <i><b>Software Engineer</b></i> and <i><b>Cybersecurity researcher</b></i>.
                           </p>
-                          <p className={"text-lg sm:text-xl leading-8"}>
-                              I focus on both frontend and backend.
+                          <p className={'text-lg sm:text-xl leading-8'}>
+                              I have 3+ years of fullstack software engineering experience developing innovative
+                              solutions.
+                              My cybersecurity background gives me a unique approach to software engineering, building
+                              solutions with security in mind frm the ground up.
                           </p>
-                          <p className={"text-lg sm:text-xl leading-8"}>
-                              I&apos;m dedicated to raising awareness about the evolving cyber threat landscape.
+                          <p className={'text-lg sm:text-xl leading-8'}>
+                              As a dedicated Cybersecurity Researcher, I am deeply involved in the ever-changing
+                              landscape of cyber threats. My focus includes monitoring, analyzing, and reporting on new
+                              adversary behaviors. Additionally, I have a keen interest in reverse engineering and
+                              threat intelligence, which aids in understanding and mitigating sophisticated cyber
+                              attacks. This specialized knowledge is instrumental in fortifying defenses and enhancing
+                              overall security strategies.
                           </p>
                       </div>
                   </CardBody>
               </Card>
           </div>
 
-          <div id={"skills"} className={" py-20 flex flex-col items-center gap-8"}>
+          <div id={'skills'} className={' py-20 flex flex-col items-center gap-8'}>
               <h1 className={`${press_start_2p.className} text-2xl`}>Skills</h1>
-              <div className={"justify-center items-center w-full flex flex-col sm:flex-row gap-6 "}>
-                  <Card className={"card3"}>
+              <div className={'justify-center items-center w-full flex flex-col sm:flex-row gap-6 '}>
+                  <Card className={'card3'}>
                       <CardHeader>
                           <h1 className={`${press_start_2p.className}`}>Languages</h1>
                       </CardHeader>
@@ -124,7 +132,7 @@ export default function Home() {
 
                   <Card className={"card4 w-full sm:w-4/12"}>
                       <CardHeader>
-                          <h1 className={`${press_start_2p.className}`}>Web Development</h1>
+                          <h1 className={`${press_start_2p.className}`}>Software Engineering</h1>
                       </CardHeader>
                       <CardBody className={"flex flex-row gap-2 w-full flex-wrap justify-center"}>
                           <ReactOriginalWordmark size={60}/>
@@ -148,6 +156,7 @@ export default function Home() {
                               <li>Malware Analysis</li>
                               <li>Threat Intelligence</li>
                               <li>Threat Hunting</li>
+                              <li>Smart Contract Auditing</li>
                           </ul>
                       </CardBody>
                   </Card>
