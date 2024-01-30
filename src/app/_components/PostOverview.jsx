@@ -9,7 +9,7 @@ export  default function PostOverview({post, index}) {
 	const router = useRouter();
 
 	return (
-		<Card id={`card${index}`} className={"sm:hover:scale-110 transition-transform w-10/12 sm:w-[380px]  flex flex-col"}>
+		<Card id={`card${index}`} className={"w-10/12 sm:w-[380px]  flex flex-col"}>
 			<CardHeader className={"h-[150px] relative w-full"}>
 				<Image src={urlFor(post.mainImage).url()} alt={"main image"} fill={true}/>
 			</CardHeader>
