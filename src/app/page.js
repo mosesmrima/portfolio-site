@@ -99,11 +99,10 @@ export default function Home() {
                           <p className={'text-lg sm:text-xl leading-8'}>
                               I have 3+ years of fullstack software engineering experience developing innovative
                               solutions.
-                              My cybersecurity background gives me a unique approach to software engineering, building
-                              secure by design software.
+                              With a background in cybersecurity, I endeavor to build software that is secure by design.
                           </p>
                           <p className={'text-lg sm:text-xl leading-8'}>
-                              As a dedicated Cybersecurity Researcher, my focus includes monitoring, analyzing, and reporting on new
+                              As a dedicated Cybersecurity Researcher, my focus includes monitoring, and analyzing new
                               adversary behaviors. Additionally, I have a keen interest in reverse engineering and
                               threat intelligence, which aids in understanding and mitigating sophisticated cyber
                               attacks.
